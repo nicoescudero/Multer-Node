@@ -10,12 +10,10 @@
 <body>
     <div class="container">
         <h1 class="title">Node Image</h1>
-        <form action="/form" method="post" enctype="multipart/form-data" accept=".jpg,.jpeg,.png,.gif" class="form">
-            <input type="file" name="image" id="image" class="btn">
-            <label for="image" class="btn">Select Image</label>
-            <button type="submit" class="btn">Upload</button>
+        <form action="/" method="get">
+            <h3 class="title">The image has been uploaded</h3>
+            <button type="submit" class="btn btn-return" href="/">Return</button>
         </form>
-        <img src="../public/uploads/photo.png" alt="" id="selected-image" class="selected-image">
     </div>
     <script src="/public/website.js"></script>
 </body>

@@ -8,7 +8,7 @@ route.get('/',(req,res)=>{
 
 route.post('/form',(req,res)=>{
     console.log(req.file);
-    res.send('Upload!');
+    res.render('reply');
 })
 
 module.exports=route;

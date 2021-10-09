@@ -19,13 +19,13 @@ const storage=multer.diskStorage({
 const config=multer({
     storage,
     dest: path.join(__dirname,'public/uploads'),
-    limits:{fileSize:5000000},
+    limits:{fileSize:3000000},//set the image size 
     fileFilter:(req,file,cb)=>{
         const types=/jpeg|jpg|png|gif/;
         const mimetype=types.test(file.mimetype);
         const extname=types.test(path.extname(file.originalname));
         if(mimetype && extname)return cb(null,true);
-        cb("Error: el archivo debe ser una imagen");
+        cb("Error: the file must be an image");
     }
 }).single('image');
 
