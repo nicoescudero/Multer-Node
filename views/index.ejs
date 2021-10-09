@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>NodeImage</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Node Image</h1>
+        <form action="/form" method="post" enctype="multipart/form-data" accept=".jpg,.jpeg,.png,.gif" class="form">
+            <input type="file" name="image" id="image" class="btn">
+            <label for="image" class="btn">
+                </span>
+                    Select Image
+                </label>
+            <button type="submit" class="btn">Upload</button>
+        </form>
+        <img src="../public/images/photo.png" alt="" id="selected-image" class="selected-image">
+    </div>
+    <script src="/public/website.js"></script>
+</body>
+</html>
