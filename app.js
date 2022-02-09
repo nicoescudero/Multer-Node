@@ -19,7 +19,7 @@ const storage=multer.diskStorage({
 const config=multer({
     storage,
     dest: path.join(__dirname,'public/uploads'),
-    limits:{fileSize:3000000},//set the image size 
+    limits:{fileSize:18000000},//set the image size 
     fileFilter:(req,file,cb)=>{
         const types=/jpeg|jpg|png|gif/;
         const mimetype=types.test(file.mimetype);
